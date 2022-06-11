@@ -18,7 +18,6 @@
 #  The code will end, only when it gets the right answer.
 
 
-import this
 
 
 print("When did India get it's independence (year)??")
