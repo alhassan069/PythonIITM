@@ -36,5 +36,8 @@ B.append(s3)
 #             C[i][j] = C[i][j] + A[i][k] * B[k][j]
 
 # print(C)
-X = numpy.mat(A)
-Y = numpy.mat(B)
+
+# Doing the same with numpy
+# X = numpy.mat(A)
+# Y = numpy.mat(B)
+# print(X * Y)

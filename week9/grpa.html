@@ -1,0 +1,27 @@
+<!-- <div class="message" dir="auto"> -->
+def get_freq(filename): &nbsp; &nbsp; f = open(filename, 'r') &nbsp; &nbsp; freq = dict() &nbsp; &nbsp; for line in f: &nbsp; &nbsp; &nbsp; &nbsp; word = line.strip() &nbsp; &nbsp; &nbsp; &nbsp; if word not in freq: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; freq[word] = 0 &nbsp; &nbsp; &nbsp; &nbsp; freq[word] += 1 &nbsp; &nbsp; f.close() &nbsp; &nbsp; return freq def relation(file1,file2): &nbsp; &nbsp; f1 = open(file1,'r') &nbsp; &nbsp; f2 = open(file2,'r') &nbsp; &nbsp; l1= f1.readlines() &nbsp;
+&nbsp; l2 =f2.readlines() &nbsp; &nbsp; f1.close() &nbsp; &nbsp; f2.close() &nbsp; &nbsp; flag = True &nbsp; &nbsp; if l1==l2: &nbsp; &nbsp; &nbsp; &nbsp; return'Equal' &nbsp; &nbsp; else: &nbsp; &nbsp; &nbsp; &nbsp; for i in range(len(l1)): &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; if l1[i] not in l2[i]: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; flag = False &nbsp; &nbsp; if flag: &nbsp; &nbsp; &nbsp; &nbsp; return'Subset' &nbsp; &nbsp; else: &nbsp; &nbsp; &nbsp; &nbsp; return'No Relation'
+def get_goals(filename, country): &nbsp; &nbsp; f=open(filename,'r') &nbsp; &nbsp; l=f.readlines()[1:] &nbsp; &nbsp; c=-1 &nbsp; &nbsp; g=-1 &nbsp; &nbsp; for i in l: &nbsp; &nbsp; &nbsp; &nbsp; if country in i: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+t = i.split(',') &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if c == -1: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c=1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; g = int(t[2]) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else: &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c+=1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; g+=int(t[2]) &nbsp; &nbsp; f.close() &nbsp; &nbsp; return((c,g)) def num_to_words(mat): &nbsp; &nbsp; P = {0: 'zero', 1: 'one', 2: 'two',3: 'three',
+4: 'four', 5: 'five',6: 'six', 7: 'seven', 8: 'eight',9: 'nine'} &nbsp; &nbsp; f = open('words.csv', 'w') &nbsp; &nbsp; n = len(mat) &nbsp; &nbsp; for i in range(n): &nbsp; &nbsp; &nbsp; &nbsp; for j in range(n): &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+line = f'{P[mat[i][j]]}' &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if j != n - 1: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; line += ',' &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; f.write(line) &nbsp; &nbsp; &nbsp; &nbsp; if i != n - 1: &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; f.write('\n') &nbsp; &nbsp; f.close()
+<reactions-element class="reactions reactions-block">
+    <reaction-element class="reaction reaction-block">
+        <div class="reaction-sticker media-sticker-wrapper" data-doc-id="5100483636361167223"><img class="media-sticker" src="blob:https://web.telegram.org/391607d9-b1ec-4d51-acb3-959ddc9acf0c"></div>
+        <div class="stacked-avatars" style="--avatar-size:24px;">
+            <div class="stacked-avatars-avatar-container">
+                <avatar-element class="avatar-24 stacked-avatars-avatar" data-peer-id="1048831882" dir="auto" data-color="red">H</avatar-element>
+            </div>
+            <div class="stacked-avatars-avatar-container">
+                <avatar-element class="avatar-24 stacked-avatars-avatar" data-peer-id="1453257468" dir="auto" data-color="blue">R</avatar-element>
+            </div>
+        </div>
+    </reaction-element><span class="time tgico"><span class="i18n">08:12 PM</span>
+    <div class="inner tgico" title="6 July 2022, 20:12:14"><span class="i18n">08:12 PM</span></div>
+    </span>
+</reactions-element>
+</div>
