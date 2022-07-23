@@ -1,11 +1,11 @@
-# import calendar
+import calendar
 # import calendar as c
 # from calendar import *
 # from calendar import calendar, month
 
 
-# print(calendar.month(2021,12))
-# print(calendar.calendar(2021))
+# print(calendar.month(2022,12))
+print(calendar.calendar(2022))
 
 
 
